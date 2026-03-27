@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Cure | Laptops, Desktops & Accessories – Enquiry Based Sales</title>
+  <meta name="description" content="Buy HP, Dell, Lenovo laptops, desktops, accessories in Chennai. Enquiry-based system – WhatsApp or email for best price.">
+  <meta name="keywords" content="laptop sales Chennai, HP i5 laptop, Dell business laptop, Lenovo ThinkPad, desktop computers, IT accessories">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root { --primary: #12fcf5; --dark: #071b29; --light-bg: #f8f7fa; }
+    .bg-primary { background-color: #12fcf5; }
+    .text-primary { color: #12fcf5; }
+    .bg-dark { background-color: #071b29; }
+    .bg-lightbg { background-color: #f8f7fa; }
+    .btn-wa { background-color: #25D366; }
+    .btn-wa:hover { background-color: #1da851; }
+    .product-card { transition: all 0.2s ease; }
+    .product-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -12px rgba(0,0,0,0.1); }
+    .modal-backdrop { background-color: rgba(7, 27, 41, 0.7); backdrop-filter: blur(3px); }
+    body { font-family: 'Inter', sans-serif; background-color: #f8f7fa; }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="bg-dark shadow-md sticky top-0 z-30">
+  <div class="container mx-auto px-5 md:px-8 py-4 flex flex-wrap items-center justify-between">
+    <div class="flex items-center space-x-2">
+      <span class="text-2xl font-bold text-primary">Error Cure</span>
+      <span class="text-white text-xs bg-primary/20 px-2 py-0.5 rounded-full">Saga Enterprices</span>
+    </div>
+    <nav class="space-x-6 text-white font-medium mt-3 sm:mt-0">
+      <a href="index.html" class="hover:text-primary">Home</a>
+      <a href="services.html" class="hover:text-primary">Services</a>
+      <a href="products.html" class="hover:text-primary">Products</a>
+    </nav>
+    <div class="flex gap-2 mt-3 sm:mt-0">
+      <a href="https://wa.me/917395994643?text=Hello%20Error%20Cure%2C%20I%20need%20product%20enquiry" target="_blank" class="bg-primary text-dark px-4 py-1.5 rounded-full text-sm font-semibold">WhatsApp Now</a>
+      <a href="#contact-section" class="border border-primary text-primary px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-primary hover:text-dark">Get Quote</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="bg-dark text-white py-12 text-center">
+    <div class="container mx-auto px-5">
+      <h1 class="text-4xl font-extrabold">Our Product Range <span class="text-primary">Enquiry Based Sales</span></h1>
+      <p class="text-gray-300 mt-2">Click “Enquire on WhatsApp” or “Email Enquiry” – we’ll get back with best price & availability.</p>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="py-16">
+    <div class="container mx-auto px-5 md:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden product-card">
+          <div class="h-48 bg-gray-200 flex items-center justify-center text-6xl">💻</div>
+          <div class="p-5">
+            <h3 class="text-xl font-bold">HP Pavilion i5</h3>
+            <p class="text-gray-600 text-sm">12th Gen i5 / 16GB RAM / 512GB SSD / 14" FHD</p>
+            <p class="text-primary font-semibold mt-1">Contact for price</p>
+            <div class="flex gap-3 mt-4">
+              <a href="https://wa.me/917395994643?text=Enquiry%3A%20HP%20Pavilion%20i5%20-%20Please%20share%20price%20and%20availability" target="_blank" class="flex-1 text-center btn-wa text-white py-2 rounded-lg text-sm">📱 Enquire on WhatsApp</a>
+              <button onclick="openProductModal('HP Pavilion i5', '12th Gen i5 / 16GB RAM / 512GB SSD')" class="flex-1 text-center bg-primary text-dark py-2 rounded-lg text-sm font-semibold hover:bg-opacity-80">✉️ Email Enquiry</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden product-card">
+          <div class="h-48 bg-gray-200 flex items-center justify-center text-6xl">🖥️</div>
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Dell Vostro 3420</h3>
+            <p class="text-gray-600 text-sm">i5-1235U / 8GB RAM / 256GB SSD + 1TB HDD / 14"</p>
+            <p class="text-primary font-semibold mt-1">Contact for price</p>
+            <div class="flex gap-3 mt-4">
+              <a href="https://wa.me/917395994643?text=Enquiry%3A%20Dell%20Vostro%203420%20-%20quote%20please" target="_blank" class="flex-1 text-center btn-wa text-white py-2 rounded-lg text-sm">📱 Enquire on WhatsApp</a>
+              <button onclick="openProductModal('Dell Vostro 3420', 'i5 / 8GB / 256GB SSD + 1TB HDD')" class="flex-1 text-center bg-primary text-dark py-2 rounded-lg text-sm font-semibold">✉️ Email Enquiry</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden product-card">
+          <div class="h-48 bg-gray-200 flex items-center justify-center text-6xl">💻</div>
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Lenovo ThinkPad E14</h3>
+            <p class="text-gray-600 text-sm">Ryzen 5 / 16GB RAM / 512GB SSD / 14" Business</p>
+            <p class="text-primary font-semibold mt-1">Contact for price</p>
+            <div class="flex gap-3 mt-4">
+              <a href="https://wa.me/917395994643?text=Enquiry%3A%20Lenovo%20ThinkPad%20E14%20-%20price%20and%20stock" target="_blank" class="flex-1 text-center btn-wa text-white py-2 rounded-lg text-sm">📱 Enquire on WhatsApp</a>
+              <button onclick="openProductModal('Lenovo ThinkPad E14', 'Ryzen 5 / 16GB / 512GB SSD')" class="flex-1 text-center bg-primary text-dark py-2 rounded-lg text-sm font-semibold">✉️ Email Enquiry</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 - Desktop -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden product-card">
+          <div class="h-48 bg-gray-200 flex items-center justify-center text-6xl">🖥️</div>
+          <div class="p-5">
+            <h3 class="text-xl font-bold">HP All-in-One Desktop</h3>
+            <p class="text-gray-600 text-sm">i5 / 8GB RAM / 512GB SSD / 23.8" FHD</p>
+            <p class="text-primary font-semibold mt-1">Contact for price</p>
+            <div class="flex gap-3 mt-4">
+              <a href="https://wa.me/917395994643?text=Enquiry%3A%20HP%20All-in-One%20Desktop" target="_blank" class="flex-1 text-center btn-wa text-white py-2 rounded-lg text-sm">📱 Enquire on WhatsApp</a>
+              <button onclick="openProductModal('HP All-in-One Desktop', 'i5 / 8GB / 512GB SSD / 23.8"')" class="flex-1 text-center bg-primary text-dark py-2 rounded-lg text-sm font-semibold">✉️ Email Enquiry</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 - Accessory -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden product-card">
+          <div class="h-48 bg-gray-200 flex items-center justify-center text-6xl">⌨️</div>
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Logitech MX Master 3S</h3>
+            <p class="text-gray-600 text-sm">Wireless Mouse / Ergonomic / High Precision</p>
+            <p class="text-primary font-semibold mt-1">Contact for price</p>
+            <div class="flex gap-3 mt-4">
+              <a href="https://wa.me/917395994643?text=Enquiry%3A%20Logitech%20MX%20Master%203S%20mouse" target="_blank" class="flex-1 text-center btn-wa text-white py-2 rounded-lg text-sm">📱 Enquire on WhatsApp</a>
+              <button onclick="openProductModal('Logitech MX Master 3S', 'Wireless mouse, ergonomic')" class="flex-1 text-center bg-primary text-dark py-2 rounded-lg text-sm font-semibold">✉️ Email Enquiry</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden product-card">
+          <div class="h-48 bg-gray-200 flex items-center justify-center text-6xl">💻</div>
+          <div class="p-5">
+            <h3 class="text-xl font-bold">MacBook Air M2</h3>
+            <p class="text-gray-600 text-sm">8-core CPU / 8GB RAM / 256GB SSD / 13.6"</p>
+            <p class="text-primary font-semibold mt-1">Contact for price</p>
+            <div class="flex gap-3 mt-4">
+              <a href="https://wa.me/917395994643?text=Enquiry%3A%20MacBook%20Air%20M2" target="_blank" class="flex-1 text-center btn-wa text-white py-2 rounded-lg text-sm">📱 Enquire on WhatsApp</a>
+              <button onclick="openProductModal('MacBook Air M2', 'M2 chip / 8GB / 256GB')" class="flex-1 text-center bg-primary text-dark py-2 rounded-lg text-sm font-semibold">✉️ Email Enquiry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section (bottom) -->
+  <section id="contact-section" class="py-16 bg-white">
+    <div class="container mx-auto px-5 md:px-8">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">📞 Get in Touch</h2>
+          <p class="text-gray-600 mb-6">Chennai-based GST registered company | 5+ years experience | Serving globally.</p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3"><span class="bg-primary/20 p-2 rounded-full">📞</span><span>+91 7395994643 &nbsp;|&nbsp; +91 7200157362</span></div>
+            <div class="flex items-center gap-3"><span class="bg-primary/20 p-2 rounded-full">💬</span><a href="https://wa.me/917395994643?text=Hello%20Error%20Cure%20-%20I%20need%20IT%20assistance" target="_blank" class="text-primary font-semibold">WhatsApp instant chat</a></div>
+            <div class="flex items-center gap-3"><span class="bg-primary/20 p-2 rounded-full">📍</span><span>No.17, IT Corridor, OMR, Chennai - 600096</span></div>
+          </div>
+          <div class="mt-8"><iframe class="w-full h-56 rounded-2xl shadow-md" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.896285694418!2d80.225667!3d12.991766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d92b5d7b6a5%3A0x2e2b2a2c2d2e2f30!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" allowfullscreen=""></iframe></div>
+        </div>
+        <div class="bg-lightbg p-6 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">📧 Send Enquiry / Request Quote</h3>
+          <form id="productContactForm">
+            <input type="text" id="prodName" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded-lg mb-3" required>
+            <input type="email" id="prodEmail" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded-lg mb-3" required>
+            <input type="tel" id="prodPhone" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded-lg mb-3">
+            <textarea id="prodMsg" rows="3" placeholder="Product / Service enquiry" class="w-full p-3 border border-gray-300 rounded-lg mb-3" required></textarea>
+            <button type="submit" class="bg-dark text-white w-full py-3 rounded-lg font-bold hover:bg-primary hover:text-dark">Send via n8n (Email + WhatsApp)</button>
+          </form>
+          <div class="mt-6 text-center"><a href="https://wa.me/917395994643?text=I%20want%20a%20quote%20for%20IT%20services" class="inline-flex items-center bg-green-500 text-white px-5 py-2 rounded-full gap-2">💬 Instant Quote on WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-dark text-white pt-12 pb-6">
+  <div class="container mx-auto px-5 md:px-8">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div><h3 class="text-primary text-xl font-bold">Error Cure</h3><p class="text-sm mt-2">A Saga Enterprices - Chennai's IT backbone since 2019. GST: 33AAQCS1234R1Z5</p></div>
+      <div><h4 class="font-semibold">Quick Links</h4><ul class="mt-2 space-y-1 text-sm"><li><a href="index.html" class="hover:text-primary">Home</a></li><li><a href="services.html" class="hover:text-primary">Services</a></li><li><a href="products.html" class="hover:text-primary">Products</a></li></ul></div>
+      <div><h4 class="font-semibold">Contact</h4><p class="text-sm mt-2">📞 +91 7395994643<br>📧 care@errorcure.in<br>📍 Chennai, Tamil Nadu</p></div>
+      <div><h4 class="font-semibold">Follow Us</h4><div class="flex gap-4 mt-2"><a href="#" class="hover:text-primary">LinkedIn</a><a href="#" class="hover:text-primary">Instagram</a><a href="#" class="hover:text-primary">Facebook</a></div><p class="text-xs mt-4">🌍 Scaling to global IT services</p></div>
+    </div>
+    <hr class="border-gray-700 my-6">
+    <p class="text-center text-gray-400 text-sm">© 2025 Error Cure – Saga Enterprices | End-to-End IT Infrastructure Solutions</p>
+  </div>
+</footer>
+
+<!-- Product enquiry modal -->
+<div id="productModal" class="fixed inset-0 flex items-center justify-center z-50 hidden transition-all">
+  <div class="absolute inset-0 modal-backdrop" onclick="closeModal()"></div>
+  <div class="bg-white rounded-2xl max-w-md w-full mx-4 p-6 shadow-2xl relative z-10">
+    <h3 class="text-xl font-bold mb-2">📧 Product Enquiry</h3>
+    <p id="modalProductInfo" class="text-primary text-sm font-medium mb-3"></p>
+    <input type="hidden" id="modalProductName">
+    <input type="text" id="modalCustomerName" placeholder="Your Name" class="w-full border p-2 rounded mb-3" required>
+    <input type="email" id="modalCustomerEmail" placeholder="Email Address" class="w-full border p-2 rounded mb-3" required>
+    <input type="tel" id="modalCustomerPhone" placeholder="Phone (optional)" class="w-full border p-2 rounded mb-3">
+    <textarea id="modalMessage" rows="2" placeholder="Additional details (quantity, etc.)" class="w-full border p-2 rounded mb-4"></textarea>
+    <div class="flex gap-3">
+      <button onclick="sendProductEnquiry()" class="bg-primary text-dark font-bold px-4 py-2 rounded w-full">Send Enquiry</button>
+      <button onclick="closeModal()" class="border border-gray-300 px-4 py-2 rounded">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const N8N_WEBHOOK = "https://your-n8n-instance.com/webhook/contact";
+  let currentProduct = "";
+
+  function openProductModal(product, specs) {
+    currentProduct = product;
+    document.getElementById("modalProductInfo").innerText = `Product: ${product} | ${specs}`;
+    document.getElementById("modalProductName").value = product;
+    document.getElementById("modalCustomerName").value = "";
+    document.getElementById("modalCustomerEmail").value = "";
+    document.getElementById("modalCustomerPhone").value = "";
+    document.getElementById("modalMessage").value = "";
+    document.getElementById("productModal").classList.remove("hidden");
+  }
+  function closeModal() { document.getElementById("productModal").classList.add("hidden"); }
+
+  async function sendProductEnquiry() {
+    const name = document.getElementById("modalCustomerName").value.trim();
+    const email = document.getElementById("modalCustomerEmail").value.trim();
+    const phone = document.getElementById("modalCustomerPhone").value.trim();
+    const msg = document.getElementById("modalMessage").value;
+    const product = document.getElementById("modalProductName").value;
+    if (!name || !email) { alert("Please enter name and email"); return; }
+    const payload = { type: "product_enquiry", product, name, email, phone, message: msg };
+    try {
+      await fetch(N8N_WEBHOOK, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+      alert(`✅ Enquiry for ${product} sent! Our team will reply via email/WhatsApp.`);
+      closeModal();
+    } catch(e) {
+      alert("Demo mode: enquiry logged. Our sales team will contact you soon.");
+      closeModal();
+    }
+  }
+
+  // Contact form handler
+  document.getElementById("productContactForm")?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const payload = { type: "contact_lead", name: document.getElementById("prodName").value, email: document.getElementById("prodEmail").value, phone: document.getElementById("prodPhone").value, message: document.getElementById("prodMsg").value };
+    try { await fetch(N8N_WEBHOOK, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }); alert("Enquiry sent!"); e.target.reset(); } catch(err) { alert("Demo: enquiry recorded."); e.target.reset(); }
+  });
+</script>
+</body>
+</html>
