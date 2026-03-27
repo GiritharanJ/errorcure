@@ -46,20 +46,17 @@
 
 <main>
   <!-- Hero -->
-  <section class="relative text-white py-16 md:py-24 overflow-hidden">
+  <section class="relative h-screen w-full text-white overflow-hidden">
 
   <!-- Background Slides -->
-  <div id="heroSlides" class="absolute inset-0">
+  <div id="heroSlides" class="absolute inset-0 w-full h-full">
     
-    <!-- Slide 1 -->
     <div class="slide absolute inset-0 bg-cover bg-center opacity-100 transition-opacity duration-1000"
          style="background-image: url('images/slide1.jpg');"></div>
 
-    <!-- Slide 2 -->
     <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
          style="background-image: url('images/slide2.jpg');"></div>
 
-    <!-- Slide 3 -->
     <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
          style="background-image: url('images/slide3.jpg');"></div>
   </div>
@@ -68,11 +65,11 @@
   <div class="absolute inset-0 bg-black/70"></div>
 
   <!-- Content -->
-  <div class="relative container mx-auto px-5 md:px-8 text-center md:text-left md:flex md:items-center md:justify-between gap-12">
+  <div class="relative h-full container mx-auto px-5 md:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between gap-12">
 
     <!-- Left Content -->
-    <div class="md:w-2/3">
-      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+    <div class="md:w-2/3 text-center md:text-left">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
         End-to-End <span class="text-primary">IT Infrastructure</span> Solutions
       </h1>
 
@@ -80,7 +77,7 @@
         Enterprise & SMB IT Support | Hardware + Networking + AMC + Backup | Chennai's trusted IT partner since 2019.
       </p>
 
-      <div class="flex flex-wrap gap-4 mt-8">
+      <div class="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
         <a href="services.html" class="bg-primary text-dark px-7 py-3 rounded-lg font-bold shadow-lg hover:bg-opacity-90 transition">
           Explore Services
         </a>
@@ -90,7 +87,7 @@
         </a>
       </div>
 
-      <div class="flex flex-wrap gap-3 mt-8 text-sm text-gray-300">
+      <div class="flex flex-wrap gap-3 mt-8 text-sm text-gray-300 justify-center md:justify-start">
         <span>✅ Laptop repair & upgrade</span>
         <span>✅ AMC contracts</span>
         <span>✅ Remote IT support</span>
@@ -100,13 +97,13 @@
 
     <!-- Right Contact Box -->
     <div class="mt-10 md:mt-0">
-      <div class="bg-primary/10 backdrop-blur-sm rounded-2xl p-5 border border-primary/30">
+      <div class="bg-primary/10 backdrop-blur-md rounded-2xl p-6 border border-primary/30 shadow-xl">
         <p class="text-primary font-semibold">📞 24/7 IT Support</p>
         <p class="text-2xl font-bold">+91 7395994643</p>
         <p class="text-lg">+91 7200157362</p>
 
         <a href="https://wa.me/917395994643?text=I%20need%20assistance%20with%20IT%20services"
-           class="inline-block mt-3 bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full text-sm">
+           class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
           💬 Chat on WhatsApp
         </a>
       </div>
@@ -114,6 +111,7 @@
 
   </div>
 </section>
+
 
 
   <!-- Brands -->
@@ -224,7 +222,7 @@
 
     slides[current].classList.remove("opacity-0");
     slides[current].classList.add("opacity-100");
-  }, 4000); // change every 4 seconds
+  }, 4000);
 
   
   const N8N_WEBHOOK_URL = "https://your-n8n-instance.com/webhook/contact"; // Replace with actual endpoint
