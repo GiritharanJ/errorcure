@@ -46,29 +46,75 @@
 
 <main>
   <!-- Hero -->
-  <section class="bg-dark text-white py-16 md:py-24">
-    <div class="container mx-auto px-5 md:px-8 text-center md:text-left md:flex md:items-center md:justify-between gap-12">
-      <div class="md:w-2/3">
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">End-to-End <span class="text-primary">IT Infrastructure</span> Solutions</h1>
-        <p class="text-lg text-gray-300 mt-4 max-w-2xl">Enterprise & SMB IT Support | Hardware + Networking + AMC + Backup | Chennai's trusted IT partner since 2019.</p>
-        <div class="flex flex-wrap gap-4 mt-8">
-          <a href="services.html" class="bg-primary text-dark px-7 py-3 rounded-lg font-bold shadow-lg hover:bg-opacity-90 transition">Explore Services</a>
-          <a href="products.html" class="border border-primary text-primary px-7 py-3 rounded-lg font-bold hover:bg-primary hover:text-dark transition">Shop Laptops</a>
-        </div>
-        <div class="flex flex-wrap gap-3 mt-8 text-sm text-gray-300">
-          <span>✅ Laptop repair & upgrade</span> <span>✅ AMC contracts</span> <span>✅ Remote IT support</span> <span>✅ Corporate projects</span>
-        </div>
+  <section class="relative text-white py-16 md:py-24 overflow-hidden">
+
+  <!-- Background Slides -->
+  <div id="heroSlides" class="absolute inset-0">
+    
+    <!-- Slide 1 -->
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-100 transition-opacity duration-1000"
+         style="background-image: url('images/slide1.jpg');"></div>
+
+    <!-- Slide 2 -->
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+         style="background-image: url('images/slide2.jpg');"></div>
+
+    <!-- Slide 3 -->
+    <div class="slide absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+         style="background-image: url('images/slide3.jpg');"></div>
+  </div>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- Content -->
+  <div class="relative container mx-auto px-5 md:px-8 text-center md:text-left md:flex md:items-center md:justify-between gap-12">
+
+    <!-- Left Content -->
+    <div class="md:w-2/3">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        End-to-End <span class="text-primary">IT Infrastructure</span> Solutions
+      </h1>
+
+      <p class="text-lg text-gray-300 mt-4 max-w-2xl">
+        Enterprise & SMB IT Support | Hardware + Networking + AMC + Backup | Chennai's trusted IT partner since 2019.
+      </p>
+
+      <div class="flex flex-wrap gap-4 mt-8">
+        <a href="services.html" class="bg-primary text-dark px-7 py-3 rounded-lg font-bold shadow-lg hover:bg-opacity-90 transition">
+          Explore Services
+        </a>
+
+        <a href="products.html" class="border border-primary text-primary px-7 py-3 rounded-lg font-bold hover:bg-primary hover:text-dark transition">
+          Shop Laptops
+        </a>
       </div>
-      <div class="mt-10 md:mt-0">
-        <div class="bg-primary/10 backdrop-blur-sm rounded-2xl p-5 border border-primary/30">
-          <p class="text-primary font-semibold">📞 24/7 IT Support</p>
-          <p class="text-2xl font-bold">+91 7395994643</p>
-          <p class="text-lg">+91 7200157362</p>
-          <a href="https://wa.me/917395994643?text=I%20need%20assistance%20with%20IT%20services" class="inline-block mt-3 btn-wa text-white px-5 py-2 rounded-full text-sm">💬 Chat on WhatsApp</a>
-        </div>
+
+      <div class="flex flex-wrap gap-3 mt-8 text-sm text-gray-300">
+        <span>✅ Laptop repair & upgrade</span>
+        <span>✅ AMC contracts</span>
+        <span>✅ Remote IT support</span>
+        <span>✅ Corporate projects</span>
       </div>
     </div>
-  </section>
+
+    <!-- Right Contact Box -->
+    <div class="mt-10 md:mt-0">
+      <div class="bg-primary/10 backdrop-blur-sm rounded-2xl p-5 border border-primary/30">
+        <p class="text-primary font-semibold">📞 24/7 IT Support</p>
+        <p class="text-2xl font-bold">+91 7395994643</p>
+        <p class="text-lg">+91 7200157362</p>
+
+        <a href="https://wa.me/917395994643?text=I%20need%20assistance%20with%20IT%20services"
+           class="inline-block mt-3 bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full text-sm">
+          💬 Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Brands -->
   <section class="py-12 bg-white">
@@ -166,6 +212,21 @@
 </footer>
 
 <script>
+<!-- Slider Script -->
+  const slides = document.querySelectorAll("#heroSlides .slide");
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove("opacity-100");
+    slides[current].classList.add("opacity-0");
+
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.remove("opacity-0");
+    slides[current].classList.add("opacity-100");
+  }, 4000); // change every 4 seconds
+
+  
   const N8N_WEBHOOK_URL = "https://your-n8n-instance.com/webhook/contact"; // Replace with actual endpoint
   document.getElementById("globalContactForm")?.addEventListener("submit", async (e) => {
     e.preventDefault();
